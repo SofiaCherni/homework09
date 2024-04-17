@@ -1,0 +1,278 @@
+.header {
+    background-color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+    width: 100%;
+
+    .navbar {
+
+        .nav {
+            display: none;
+            margin-top: 30px;
+
+            &.active {
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 16px;
+            }
+
+            &__link {
+                color: black;
+                padding: 10px;
+                display: block;
+                transition: scale 0.1s;
+                letter-spacing: 1;
+                text-transform: uppercase;
+                cursor: pointer;
+            }
+
+            &__link:hover {
+                background-color: #F13C6E;
+                transform: scale(1.01);
+                transition: all 1s;
+            }
+        }
+
+        &__btn {
+            width: 30px;
+            height: 22px;
+            position: relative;
+            margin: 0;
+            transform: rotate(0deg);
+            transition: all .5s ease-in-out;
+            cursor: pointer;
+            margin-top: 20px;
+            
+            &.active span {
+                &:nth-child(1) {
+                    top: 9px;
+                    transform: rotate(135deg);
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                    left: -30px;
+                }
+                &:nth-child(3) {
+                    top: 9px;
+                    transform: rotate(-135deg);
+                }
+            }
+    
+            &-row {
+                display: block;
+                position: absolute;
+                height: 4px;
+                width: 100%;
+                background-color: black;
+                border-radius: 4px;
+                opacity: 1;
+                left: 0;
+                transform: rotate(0deg);
+                transition: .25s ease-in-out;
+    
+                &:nth-child(1) {
+                    top: 0;
+                }
+                &:nth-child(2) {
+                    top: 9px;
+                }
+                &:nth-child(3) {
+                    top: 18px;
+                }
+            }
+        }
+
+        
+    }
+
+    .header-wrap {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-bottom: 1px solid #EFEFEF;
+            
+        &__logo {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &__img {
+            margin-right: 20px;
+            padding: 20px 0;
+        }
+
+        &__title {
+            color: #F13C6E;
+            font-size: 2.25rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        &__callback {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 20px;
+        }
+
+        &__number-phone {
+            line-height: 1.17;
+            margin-right: 40px;
+            font-size: 0.875rem;
+            white-space: nowrap;
+        }
+
+        &__button {
+            padding: 13px 13%;
+            border: 2px solid #F13C6E;
+            border-radius: 40px;
+            color: black;
+
+            &:hover {
+                background-color: #F13C6E;
+                color: #ffffff;
+            }
+        }
+
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        padding: 15px 0;
+        overflow-x: scroll;
+            
+        &__link {
+            color: black;
+            padding: 25px 20px;
+            font-size: 0.875rem;
+        }
+
+        &__link:hover {
+            background-color: #EFEFEF;
+            transform: scale(1.01);
+            transition: all 1s;
+        }
+    }
+    
+    .header-hero  {
+        background: url(../images/sale.png) center no-repeat;
+        background-size: cover;
+
+        .box-hero {
+            padding: 142px 0 205px;
+            width: 100%;
+
+            &__heading {
+                font-size: 3rem;
+                font-weight: 700;
+                line-height: 3;
+                color: #fff;
+            }
+
+            &__description {
+                color: #ffffff;
+                line-height: 1.25;
+                font-size: 0.875rem;
+                margin-bottom: 40px;
+            }
+
+            &__button {
+                padding: 10px 22%;
+                border: 2px solid #ffffff;
+                border-radius: 40px;
+                color: #ffffff;
+
+                &:hover {
+                    background-color: #ffffff;
+                    color: #F13C6E;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 520px) {
+    
+    .header {
+    
+        .navbar {
+            background-color: #EFEFEF;
+
+            &__btn {
+                display: none;
+            }
+    
+            .nav {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 17px;
+                margin-top: 0;
+                padding-bottom: 16px;
+    
+                &__link {
+                    color: black;
+                    padding: 16px 15px;
+                }
+    
+                &__link:hover {
+                    background-color: #F13C6E;
+                    transform: scale(1.01);
+                    transition: all 1s;
+                }
+            }
+        }
+    
+        .header-wrap {
+            flex-direction: row;
+            align-items: center;
+            
+            &__logo {
+                justify-content: flex-start;
+            }
+    
+            &__callback {
+                justify-content: flex-end;
+                padding-bottom: 0;
+                white-space: nowrap;
+            }
+    
+            &__number-phone {
+                font-size: 1rem;
+            }
+    
+            &__button {
+                padding: 13px 18%;
+            }
+        }
+        .header-hero {
+            .box-hero {
+                &__button {
+                    padding: 10px 9%;
+                }
+            }
+        }
+    
+        .menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 0;
+            overflow-x: hidden;
+                
+            &__link {
+                color: black;
+                padding: 29px 20px;
+            }
+    
+            &__link:hover {
+                background-color: #EFEFEF;
+                transform: scale(1.01);
+                transition: all 1s;
+            }
+        }
+    }
+}

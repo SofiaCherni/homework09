@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header"> 
+            <!-- Блок меню -->
+            <div class="navbar container"> 
+                <div id="burger" class="navbar__btn">
+                    <span class="navbar__btn-row"></span>
+                    <span class="navbar__btn-row"></span>
+                    <span class="navbar__btn-row"></span>
+                </div>
+                <ul id="navbarList" class="nav">
+                    <li class="nav__item"><a href="#" class="nav__link">Delivery</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Payment</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Reviews</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">FAQ</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Contacts</a></li>
+                </ul>
+            </div>
+            <!-- Блок с логотипом и кнопкой 'перезвонить мне' -->
+            <div class="header-wrap container">
+                <div class="header-wrap__logo">
+                    <div class="header-wrap__img">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="logotype">
+                        </a>
+                    </div>
+                    <div class="header-wrap__title">Beauty</div>
+                </div>
+                <div class="header-wrap__callback">
+                    <div class="header-wrap__number-phone">1 (213) 123-45-67</div>
+                    <a href="#" class="header-wrap__button">Call back</a>
+                </div>
+            </div>
+            <!-- Блок выбора категорий мебели -->
+            <div class="menu-wrap container">
+                <ul class="menu">
+                    <li class="menu__item"><a href="#" class="menu__link">Salon</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Barbershop</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Manicure</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Pedicure</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Massage</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Furniture</a></li>
+                </ul>
+            </div>
+            <!-- Блок банера -->
+            <div class="header-hero container">
+                <div class="box-hero">
+                    <h1 class="box-hero__heading">Super chair</h1>
+                    <p class="box-hero__description">The text of the action always reflects the
+                        <br>
+                        essence, and not just
+                        <br>
+                        chatter, so be carefu</p>
+                    <a href="#" class="box-hero__button">More</a>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <!-- Первый блок витрины -->
+            <section class="section container">
+                <h2 class="section__heading">Special offers</h2>
+                <div class="offers block">
+                    <div class="block__item">
+                        <img class="block__picture" src="images/Rectangle.png" alt="chiar">
+                        <p class="block__discription">Hairdressing chair "Norm" hydraulic</p>
+                        <p class="block__price">300$</p>
+                        <a href="#" class="block__button">Buy</a>
+                    </div>
+                    <div class="block__item">
+                        <img class="block__picture" src="images/Rectangle.png" alt="chiar">
+                        <p class="block__discription">Hairdressing chair "Norm" hydraulic</p>
+                        <p class="block__price">300$</p>
+                        <a href="#" class="block__button">Buy</a>
+                    </div>
+                    <div class="block__item">
+                        <img class="block__picture" src="images/Rectangle.png" alt="chiar">
+                        <p class="block__discription">Hairdressing chair "Norm" hydraulic</p>
+                        <p class="block__price">300$</p>
+                        <a href="#" class="block__button">Buy</a>
+                    </div>
+                    <div class="block__item">
+                        <img class="block__picture" src="images/Rectangle.png" alt="chiar">
+                        <p class="block__discription">Hairdressing chair "Norm" hydraulic</p>
+                        <p class="block__price">300$</p>
+                        <a href="#" class="block__button">Buy</a>
+                    </div>
+                </div>
+            </section>
+            <!-- Информационный блок доступные скидки и местонахождения магазина -->
+            <section class="section container">
+                <h2 class="section__heading visually-hidden">Title</h2>
+                <div class="info">
+                    <div class="info__bonus">
+                        <div class="info__block">
+                            <h3 class="info__title ">Get bonuses and gifts</h3>
+                            <p class="info__description">Every month we play
+                                $1000 for our clients</p>
+                            <form method="POST" action="https://fom.in.ua/echo">
+                                <input class="info__email" type="email" placeholder="Enter your e-mail">
+                            </form>
+                        </div>
+                        <div class="info__picture">
+                            <img src="images/email.png" alt="icon email">
+                        </div>
+                    </div>
+                    <div class="info__location">
+                        <div class="info__block">
+                            <h3 class="info__title">Visit us</h3>
+                            <p class="info__description">Over 300 stores
+                                throughout the USA</p>
+                            <div class="info__button">
+                                <a href="" class="map">Store map</a>
+                            </div>
+                        </div>
+                        <div class="info__picture info__picture--special">
+                            <img src="images/truck.png" alt="icon truck">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Сетка сотрудничества с брендами -->
+            <section class="section container">
+                <h2 class="section__heading visually-hidden">Title</h2>
+                <div class="brands">
+                    <div class="brands__item">
+                        <img src="images/brands.png" alt="logo impuls">
+                    </div>
+                    <div class="brands__item">
+                        <img src="images/brands.png" alt="logo impuls">
+                    </div>
+                    <div class="brands__item">
+                        <img src="images/brands.png" alt="logo impuls">
+                    </div>
+                    <div class="brands__item">
+                        <img src="images/brands.png" alt="logo impuls">
+                    </div>
+                    <div class="brands__item">
+                        <img src="images/brands.png" alt="logo impuls">
+                    </div>
+                    <div class="brands__item">
+                        <img src="images/brands.png" alt="logo impuls">
+                    </div>
+                    <div class="brands__item brands__item--special">
+                        <img src="images/brands.png" alt="logo impuls">
+                    </div>
+                    <div class="brands__item brands__item--special">
+                        <img src="images/brands.png" alt="logo impuls">
+                    </div>
+                    <div class="brands__item brands__item--special">
+                        <img src="images/brands.png" alt="logo impuls">
+                    </div>
+                    <div class="brands__item brands__item--special">
+                        <img src="images/brands.png" alt="logo impuls">
+                    </div>
+                    <div class="brands__item brands__item--special">
+                        <img src="images/brands.png" alt="logo impuls">
+                    </div>
+                    <div class="brands__item brands__item--special">
+                        <img src="images/brands.png" alt="logo impuls">
+                    </div>
+                </div>
+            </section>
+            <!-- Второй блок витрины -->
+            <section class="section container">
+                <h2 class="section__heading">Have you recently viewed</h2>
+                <div class="recently_viewed block">
+                    <div class="block__item">
+                        <img class="block__picture" src="images/Rectangle.png" alt="chiar">
+                        <p class="block__discription">Hairdressing chair "Norm" hydraulic</p>
+                        <p class="block__price">300$</p>
+                        <a href="#" class="block__button">Buy</a>
+                    </div>
+                    <div class="block__item">
+                        <img class="block__picture" src="images/Rectangle.png" alt="chiar">
+                        <p class="block__discription">Hairdressing chair "Norm" hydraulic</p>
+                        <p class="block__price">300$</p>
+                        <a href="#" class="block__button">Buy</a>
+                    </div>
+                    <div class="block__item">
+                        <img class="block__picture" src="images/Rectangle.png" alt="chiar">
+                        <p class="block__discription">Hairdressing chair "Norm" hydraulic</p>
+                        <p class="block__price">300$</p>
+                        <a href="#" class="block__button">Buy</a>
+                    </div>
+                    <div class="block__item">
+                        <img class="block__picture" src="images/Rectangle.png" alt="chiar">
+                        <p class="block__discription">Hairdressing chair "Norm" hydraulic</p>
+                        <p class="block__price">300$</p>
+                        <a href="#" class="block__button">Buy</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <!-- Блок популярный категорий -->
+            <div class="categories container">
+                <div class="categories__block">
+                    <h3 class="categories__title">
+                        Popular
+                        <br>
+                        categories
+                    </h3>
+                    <p class="categories__item">
+                        <a href="#" class="categories__link">Hozzles</a>
+                    </p>
+                    <p class="categories__item">
+                        <a href="#" class="categories__link">Tools</a>
+                    </p>
+                    <p class="categories__item">
+                        <a href="#" class="categories__link">Gel polishes</a>
+                    </p>
+                    <p class="categories__item">
+                        <a href="#" class="categories__link">Design</a>
+                    </p>
+                    <p class="categories__item">
+                        <a href="#" class="categories__link">Building</a>
+                    </p>
+                    <p class="categories__item">
+                        <a href="#" class="categories__link">Equipme</a>
+                    </p>
+                </div>
+                <div class="categories__block">
+                    <h3 class="categories__title">
+                        Popular
+                        <br>
+                        categories
+                    </h3>
+                    <p class="categories__item">
+                        <a href="#" class="categories__link">Hozzles</a>
+                    </p>
+                    <p class="categories__item">
+                        <a href="#" class="categories__link">Tools</a>
+                    </p>
+                    <p class="categories__item">
+                        <a href="#" class="categories__link">Gel polishes</a>
+                    </p>
+                    <p class="categories__item">
+                        <a href="#" class="categories__link">Design</a>
+                    </p>
+                    <p class="categories__item">
+                        <a href="#" class="categories__link">Building</a>
+                    </p>
+                    <p class="categories__item">
+                        <a href="#" class="categories__link">Equipme</a>
+                    </p>
+                </div>
+                <div class="categories__block categories__block--special">
+                    <h3 class="categories__title">
+                        Popular
+                        <br>
+                        categories
+                    </h3>
+                    <p class="categories__item">
+                        <a href="#" class="categories__link">Hozzles</a>
+                    </p>
+                    <p class="categories__item">
+                        <a href="#" class="categories__link">Tools</a>
+                    </p>
+                    <p class="categories__item">
+                        <a href="#" class="categories__link">Gel polishes</a>
+                    </p>
+                    <p class="categories__item">
+                        <a href="#" class="categories__link">Design</a>
+                    </p>
+                    <p class="categories__item">
+                        <a href="#" class="categories__link">Building</a>
+                    </p>
+                    <p class="categories__item">
+                        <a href="#" class="categories__link">Equipme</a>
+                    </p>
+                </div>
+                <div class="categories__block categories__block--special">
+                    <h3 class="categories__title">
+                        Popular
+                        <br>
+                        categories
+                    </h3>
+                    <p class="categories__item">
+                        <a href="#" class="categories__link">Hozzles</a>
+                    </p>
+                    <p class="categories__item">
+                        <a href="#" class="categories__link">Tools</a>
+                    </p>
+                    <p class="categories__item">
+                        <a href="#" class="categories__link">Gel polishes</a>
+                    </p>
+                    <p class="categories__item">
+                        <a href="#" class="categories__link">Design</a>
+                    </p>
+                    <p class="categories__item">
+                        <a href="#" class="categories__link">Building</a>
+                    </p>
+                    <p class="categories__item">
+                        <a href="#" class="categories__link">Equipme</a>
+                    </p>
+                </div>
+            </div>
+            <!-- Блок как свьязатся -->
+            <div class="contacts container">
+                <div class="contacts__icon">
+                    <p class="contacts__item">
+                        <a class="contacts__link" href="#">
+                            <img src="images/Youtube.png" alt="youtube icon">
+                        </a>
+                    </p>
+                    <p class="contacts__item">
+                        <a class="contacts__link" href="#">
+                            <img src="images/facebook-logo.png" alt="facebook icon">
+                        </a>
+                    </p>
+                    <p class="contacts__item contacts__item--special">
+                        <a class="contacts__link" href="#">
+                            <img src="images/instagram.png" alt=" instagram icon">
+                        </a>
+                    </p>
+                </div>
+                <div class="contacts__callback">
+                    <div class="contacts__number-phone">1 (213) 123-45-67</div>
+                    <a href="#" class="contacts__button">Call back</a>
+                </div>
+            </div>
+            <!-- Блок копирайт -->
+            <div class="copyright container">
+                <p class="copyright__item">Best Store (c) 2019 All rights reserved. Online store of equipment for beauty salons</p>
+                <p class="copyright__item">Privacy Policy</p>
+            </div>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

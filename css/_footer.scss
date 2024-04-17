@@ -1,0 +1,152 @@
+.categories {
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #efefef;
+
+    &__block--special {
+        display: none;
+    }
+
+    &__title {
+        font-size: 1rem;
+        font-weight: 500;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #efefef;
+    }
+    &__link {
+        font-size: 0.75rem;
+        line-height: 1.75;
+        padding-top: 30px;
+        color: black;
+
+        &:hover {
+            font-weight: 700;
+        }
+    }
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__icon {
+        padding-top: 10px;
+        display: flex;
+    }
+
+    &__item {
+        position: relative;
+        padding: 20px;
+        margin-right: 10px;
+        border-radius: 50%;
+        border: 1px solid #F13C6E;
+
+        img {
+            position: absolute;
+            left: 9px;
+            top: 12px;
+        }
+    }
+
+    &__item:hover {
+        background-color: #ffd4e0;
+    }
+
+    &__item--special img {
+        left: 9px;
+        top: 9px;
+    }
+
+    &__callback {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 0;
+        width: 100%;
+    }
+
+    &__number-phone {
+        line-height: 1.17;
+        margin-right: 14%;
+        font-size: 0.875rem;
+        white-space: nowrap;
+    }
+
+    &__button {
+        padding: 13px 13%;
+        border: 2px solid #F13C6E;
+        border-radius: 40px;
+        white-space: nowrap;
+        color: black;
+        
+        &:hover {
+            background-color: #F13C6E;
+            color: #ffffff;
+        }
+    }
+}
+
+.copyright {
+    background-color: #efefef;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &__item{
+        font-size: 0.75rem;
+        color: #828282; 
+        text-align: center;
+        padding-top: 10px;
+    }
+}
+
+@media screen and (min-width: 520px) {
+
+    .categories {
+        grid-template-columns: repeat(4, 1fr);
+    
+        &__block--special {
+            display: block;
+        }
+    }
+    
+    .contacts {
+        flex-direction: row;
+        justify-content: space-between;
+    
+        &__icon {
+            align-items: center;
+        }
+        
+        &__callback {
+            justify-content: flex-end;
+        }
+    
+        &__number-phone {
+            font-size: 1rem;
+            margin-right: 40px;
+        }
+    
+        &__button {
+            padding: 13px 8%;
+        }
+    }
+    
+    .copyright {
+        padding-top: 30px;
+        flex-direction: row;
+    
+        &__item{
+            padding-top: 0;
+            text-align: justify;
+        }
+    }
+}
