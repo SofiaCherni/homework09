@@ -122,6 +122,14 @@
             margin-right: 40px;
             font-size: 0.875rem;
             white-space: nowrap;
+
+            a {
+                color: black;
+            }
+
+            a:hover {
+                color: #F13C6E;
+            }
         }
 
         &__button {

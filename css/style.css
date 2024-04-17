@@ -167,6 +167,12 @@ a {
   font-size: 0.875rem;
   white-space: nowrap;
 }
+.header .header-wrap__number-phone a {
+  color: black;
+}
+.header .header-wrap__number-phone a:hover {
+  color: #F13C6E;
+}
 .header .header-wrap__button {
   padding: 13px 13%;
   border: 2px solid #F13C6E;
@@ -625,6 +631,12 @@ a {
   margin-right: 14%;
   font-size: 0.875rem;
   white-space: nowrap;
+}
+.contacts__number-phone a {
+  color: black;
+}
+.contacts__number-phone a:hover {
+  color: #F13C6E;
 }
 .contacts__button {
   padding: 13px 13%;
