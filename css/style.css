@@ -200,8 +200,11 @@ a {
   transition: all 1s;
 }
 .header .header-hero {
-  background: url(../images/sale.png) center no-repeat;
+  background: url(../images/sale.png);
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
+  min-height: 193px;
 }
 .header .header-hero .box-hero {
   padding: 142px 0 205px;
